@@ -28,7 +28,7 @@ function populateTable(users) {
 function fetchUser() {
   let id = document.getElementById('userID').value;
   if (isNaN(id)) return;
-  fetch(`https://hello-database.herokuapp.com/api/user/${id}`)
+  fetch(`https://hellodatabase-app.herokuapp.com/api/user/${id}`)
     .then(res => res.json())
     .then(user => {
       let users = [user];
