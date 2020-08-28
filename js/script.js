@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetchData();
 });
 function fetchData() {
-  fetch('https://hello-database.herokuapp.com/api/users')
+  fetch('https://hellodatabase-app.herokuapp.com/api/users')
     .then(res => res.json())
     .then(users => {
       populateTable(users);
